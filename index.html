@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/imagehover.css">
+</head>
+<style>
+      @font-face
+        {
+            src: url('fonts/a.ttf');
+            font-family: hello;
+        }
+     html,body
+     {
+       margin: 0%;
+       padding: 0%;
+     }
+     body::-webkit-scrollbar
+     {
+         width: 4px;
+     }
+     body::-webkit-scrollbar-thumb
+     {
+       background-color: orange;
+     }
+ 
+     *
+     {
+         box-sizing: border-box;
+     }
+     .one
+     {
+         height: 100vh;
+         width: 100%;
+         background-image: url('images/a.jpg');
+         background-size: cover;
+         overflow: hidden;        
+     }
+     .one1
+     {
+        height: 14%;
+        width: 100%;
+        position: absolute;
+        top: 15%;
+     }
+     .slogan
+     {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 20px;
+        text-decoration: none;
+        text-align: center;
+     }
+     .one2
+     {
+        height: 40%;
+        width: 100%;
+        background-color: white;
+        margin-top: 45%;
+        transform: skew(0deg,-14deg);
+     }
+     .one3
+     {
+        height: 40%;
+        width: 100%;
+        background-color: white;
+       transform: skew(0deg,30deg);
+     }
+     .two
+     {
+         
+        height: 50vh;
+        width: 100%;
+       
+     }
+     .two1
+     {
+         height: 60%;
+         width: 40%; 
+         margin: 10%;
+         font-family: 'Comic Sans MS', sans-serif;
+        font-size: 20px;
+        text-decoration: none;
+        text-align: left;
+     }
+     .three
+     {
+        height: 80vh;
+         width: 100%; 
+         
+         display: flex;
+     }
+     .three1
+     {
+        height: 90%;
+         width: 35%; 
+         background-image: url('images/a2.png'); 
+         background-size: 97% 97%;
+         background-repeat: no-repeat;
+         margin: 2%;
+         filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.5));
+     }
+    .three2
+    {
+        height: 90%;
+         width: 55%; 
+         margin-top: 3%; 
+         display: flex;
+         flex-wrap: wrap;
+    }
+    .three2a,.three2b,.three2c,.three2d
+    {
+        height: 50%;
+         width: 50%;       
+    }
+    .text
+    {
+        font-family: 'Comic Sans MS', sans-serif;
+        font-size: 20px;
+        text-decoration: none;
+        text-align: left;
+    }
+    .four
+    {
+        height: 100vh;
+         width:100%; 
+         background-color: rgb(14,122, 158);
+         overflow: hidden;
+    }
+    .four1
+    {
+        height: 50%;
+        width: 100%;
+        background-color: white;
+        transform: skew(0deg,-8deg);
+        top: -35%;
+        position: relative;
+    }
+    .four2
+    {
+        height: 50%;
+        width: 100%;
+        background-color: white;
+        transform: skew(0deg,7deg);
+        bottom: -38%;
+        position: relative;
+    }
+    .four3
+    {
+        height: 55%;
+        width: 45%;
+       
+        position: relative;
+        top: -75%;
+        left:25% ;
+        
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .logo
+    {
+        height: 30%;
+        width: 40%;
+     
+        margin-left: 25%;
+        background-image: url('images/l.png');
+        background-size: 95% 95%;
+        filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.5));
+    }
+    .five
+    {
+        height: 80vh;
+        width: 100%;
+        
+        display: flex;
+    }
+    .five1
+    {
+        height: 80%;
+        width: 60%;
+        
+        margin: 3%;
+       display: flex;
+        flex-wrap: wrap;
+    }
+    .five2
+    {
+        height: 85%;
+        width: 30%;
+       background-image: url('images/1.png');
+       background-size: 97% 97%;
+       background-repeat: no-repeat;
+        margin: 2%;
+    }
+    .five1a
+    {
+        height: 100%;
+        width: 20%;
+        
+       writing-mode: vertical-lr;
+          
+    }
+    .five1b
+    {
+        height: 50%;
+        width: 80%;
+        
+       
+    }
+    .five1c
+    {
+        height: 50%;
+        width: 80%;
+        
+        margin-top: -28%;
+        margin-left: 20%;
+    }
+    .six
+    {
+        height: 80vh;
+        width: 100%;
+       position: relative;
+        display: flex;
+        
+    }
+    .six1
+    {
+        height: 50%;
+        width: 20%;
+        overflow: hidden;
+        box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.6);
+        background-color: transparent;
+        transform: rotateZ(50deg);
+         position: absolute;
+         top: 10%;
+         left: 5%;      
+    }
+    .sx1
+    {
+        height: 140%;
+        width: 142%;
+        background-image: url('images/b.jpg');
+       
+       background-size: cover;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%) rotateZ(-50deg);
+    }
+    .six2
+    {
+        height: 50%;
+        width: 60%;
+       
+        position: absolute;
+        right: 1%;
+
+    }
+    .seven
+    {
+        height: 50vh;
+        width: 100%;
+        background-color: rgb(14,122, 158);
+        display: flex;
+    }
+    .seven1
+    {
+        height: 65%;
+        width: 30%;
+       background-color: azure;
+        margin:3%;        
+    }
+    .seven1::before
+    {
+            content: '';
+            width: 10%;
+            height: 20%;
+            position: absolute;
+           transform: translateX(-50%) rotateZ(45deg);
+            background-color:azure;
+            margin-top: 6%;
+            margin-left: 19%;   
+    }
+    .seven2
+    {
+        height: 65%;
+        width: 30%;
+       background-color: azure;
+        margin:3%;
+    }
+    .seven2::before
+    {
+            content: '';
+            width: 10%;
+            height: 20%;
+            position: absolute;
+           transform: translateX(-50%) rotateZ(45deg);
+            background-color:azure;
+            margin-top: 6%;
+            margin-left: 19%;
+            
+            
+    }
+    .seven3
+    {
+        height: 65%;
+        width: 30%;
+       background-color: azure;
+        margin:3%;
+    }
+    .seven3::before
+     {
+            content: '';
+            width: 10%;
+            height: 20%;
+            position: absolute;
+           transform: translateX(-50%) rotateZ(45deg);
+            background-color:azure;
+            margin-top: 6%;
+            margin-left: 19%;  
+    }
+    .text7
+    {
+        font-family: 'Comic Sans MS', sans-serif;
+        font-size: 16px;
+        text-decoration: none;
+        text-align: left;
+        font-weight: bolder;
+        text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.2);
+        margin: 2%;
+    }
+    .eight
+    {
+        width: 100%;
+        height: 40vh;
+      
+           background-image: url('images/d.jpg');
+           background-size: cover;
+           position: relative;
+           
+           overflow: hidden;
+    }
+    .overlay
+    {
+        width: 100%;
+        height: 100%;
+        background-color:azure;
+        opacity: 0.2;
+        display: flex;
+        overflow: hidden;
+        position: relative;
+       
+    }
+    .ovr1,.ovr2,.ovr3
+    {
+      width: 25%;
+      height: 80%;
+      
+      top: 50%;
+      left: 5%;
+      transform: translateY(-50%);
+      position: relative;
+    }
+    .ovr1
+    {
+        background-image: url('images/logo.png');
+        background-size: cover;
+        top: 10%;
+        z-index: 30000;
+        position: absolute;
+        width: 20%;
+        height: 80%;
+        background-position: center;
+        color: white;
+    }
+    .ovr2
+    {
+        font-family: 'Comic Sans MS', sans-serif;
+        font-size: 18px;
+        text-decoration: none;
+        text-align: left;
+        font-weight: bolder;
+        z-index: 300000;
+        position: absolute;
+       
+        left: 40%;
+       top: 25%;
+        text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.3);  
+    }
+    .ovr3
+    {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 18px;
+        text-decoration: none;
+        text-align: left;
+        font-weight: bolder;
+        z-index: 300000;
+        position: absolute;
+       
+        left: 70%;
+       top: 60%;
+        text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.3); 
+    }
+    .fa-twitter
+   {
+       font-size: 30px;
+       color: black;
+   } 
+
+</style>
+<body>
+    <div class="one">
+        <div class="one1">
+            <div class="slogan ">
+                <h1><marquee > We are Creative...</marquee></h1>
+            </div>
+        </div>
+        <div class="one2"></div>
+        <div class="one3"></div>
+    </div>
+    <div class="two">
+        <div class="two1  wow fadeIn Up animated">
+            <h1>About History</h1>
+            <p class="text  wow fadeIn Up animated" data-wow-delay=".8s">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Possimus beatae omnis ducimus ipsa sint quia eum quaerat blanditiis, 
+                repellendus inventore sunt non recusandae nisi placeat, velit ratione expedita suscipit asperiores!</p>
+        </div>
+    </div>
+    <div class="three">
+        <div class="three1"></div>
+        <div class="three2">
+              
+            <div class="three2a">
+                <div class="text  wow fadeIn Up animated" >
+                    <h1>Project</h1>
+                    <p class="text  wow fadeIn Up animated" data-wow-delay=".8s">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Possimus beatae omnis ducimus ipsa sint quia eum quaerat blanditiis, 
+                            repellendus inventore sunt non recusandae nisi placeat, velit ratione expedita suscipit asperiores</p>
+                </div>
+            </div>
+            <div class="three2b">
+                    <div class="text  wow fadeIn Up animated" >
+                            <h1>Solution</h1>
+                            <p class="text  wow fadeIn Up animated" data-wow-delay=".8s">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Possimus beatae omnis ducimus ipsa sint quia eum quaerat blanditiis, 
+                                    repellendus inventore sunt non recusandae nisi placeat, velit ratione expedita suscipit asperiores</p>
+                        </div>
+            </div>
+            <div class="three2c">
+                    <div class="text  wow fadeIn Up animated" >
+                            <h1>Documentation</h1>
+                            <p class="text  wow fadeIn Up animated" data-wow-delay=".8s">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Possimus beatae omnis ducimus ipsa sint quia eum quaerat blanditiis, 
+                                    repellendus inventore sunt non recusandae nisi placeat, velit ratione expedita suscipit asperiores</p>
+                        </div>
+            </div>
+            <div class="three2d">
+                    <div class="text  wow fadeIn Up animated" >
+                            <h1>Products</h1>
+                            <p class="text  wow fadeIn Up animated" data-wow-delay=".8s">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Possimus beatae omnis ducimus ipsa sint quia eum quaerat blanditiis, 
+                                    repellendus inventore sunt non recusandae nisi placeat, velit ratione expedita suscipit asperiores</p>
+                        </div>
+            </div>
+        </div>
+    </div>
+    <div class="four">
+        <div class="four1"></div>
+        <div class="four2"></div>
+        <div class="four3">
+            <div class="logo"></div>
+            <div class="text  wow fadeIn Up animated" >
+                    <h1>Hunt Club</h1>
+                    <p class="text  wow fadeIn Up animated" data-wow-delay=".8s"> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Possimus beatae omnis ducimus ipsa sint quia eum quaerat blanditiis, 
+                            repellendus inventore sunt non recusandae nisi placeat, velit ratione expedita suscipit asperiores</p>
+                </div>
+        </div>
+    </div>
+    <div class="five">
+        <div class="five1">
+            <div class="five1a">
+                <h1 style="font-size:44px;">Our Skills........</h1>
+            </div>
+            <div class="five1b">
+                    <div class="text  wow fadeIn Up animated" >
+                            
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Possimus beatae omnis ducimus ipsa sint quia eum quaerat blanditiis, 
+                                    repellendus inventore sunt non recusandae nisi placeat, velit ratione expedita suscipit asperiores</p>
+                        </div>
+            </div>
+            <div class="five1c">
+                    <div class="text   wow fadeIn Up animated" >
+                            
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Possimus beatae omnis ducimus ipsa sint quia eum quaerat blanditiis, 
+                                    repellendus inventore sunt non recusandae nisi placeat, velit ratione expedita suscipit asperiores</p>
+                        </div>           
+                
+            </div>
+        </div>
+        <div class="five2"></div>
+    </div>
+    <div class="six">
+        <div class="six1">
+            <div class="sx1"></div>
+        </div>
+        <div class="six2">
+                <div class="text  wow fadeIn Up animated" >
+                        <h1>Why Choose Us?</h1>
+                        <p class="text  wow fadeIn Up animated" data-wow-delay=".8s">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Possimus beatae omnis ducimus ipsa sint quia eum quaerat blanditiis, 
+                                repellendus inventore sunt non recusandae nisi placeat, velit ratione expedita suscipit asperiores</p>
+                    </div>
+        </div>
+    </div>
+    <div class="seven">
+        <div class="seven1">
+                <div class="text7 wow fadeInUp animated">
+                        <h1>Why Choose Us?</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Possimus beatae omnis ducimus ipsa sint quia eum quaerat blanditiis, 
+                                repellendus inventore sunt non recusandae nisi placeat, velit ratione expedita suscipit asperiores</p>
+                    </div>
+        </div>
+        <div class="seven2">
+                <div class="text7 wow fadeInUp animated">
+                        <h1>Connect Us</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Possimus beatae omnis ducimus ipsa sint quia eum quaerat blanditiis, 
+                                repellendus inventore sunt non recusandae nisi placeat, velit ratione expedita suscipit asperiores</p>
+                    </div>
+        </div>
+        <div class="seven3">
+                <div class="text7 wow fadeInUp animated">
+                        <h1>Feedback</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Possimus beatae omnis ducimus ipsa sint quia eum quaerat blanditiis, 
+                                repellendus inventore sunt non recusandae nisi placeat, velit ratione expedita suscipit asperiores</p>
+                    </div>
+        </div>
+    </div>
+    <div class="eight">
+            <div class="ovr1 wow fadeInUp animated"></div>
+        <div class="overlay"></div>
+        <div class="ovr2 wow fadeInUp animated">
+                <h1>Connect Us</h1>
+                <p>welcome to this portal.....</p>
+            </div>
+            <div class="ovr3">
+                <div class="eighttxt wow fadeInUp animated">
+                    <h1>Tweets..</h1>
+                    <p ><i class="fab fa-twitter ">
+                        </i>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+         </div>
+        
+
+    </div>
+    <script src="wow.js">
+        </script>
+        <script>
+             new WOW().init();
+        </script>
+</body>
+</html>
